@@ -1,10 +1,10 @@
 function calculateBMI() {
   const height = document.getElementById("height").value;
   const weight = document.getElementById("weight").value;
-  const age = document.getElementById("age").value;
   const result = document.getElementById("result");
 
-  if (height === "" || weight === "" || age === "") {
+  // if (height === "" || weight === "" || age === "") {
+  if (height === "" || weight === "" ) {
     alert("Please fill all the fields");
   } else {
     const bmi = Math.ceil(weight / (height / 100) ** 2);
